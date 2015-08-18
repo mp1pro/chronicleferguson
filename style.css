@@ -1,4 +1,4 @@
-font-face {
+@font-face {
     font-family: PxGrotesk-Bold;
     src: url("fonts/PxGrotesk-Bold.otf") format("opentype");
 }
@@ -48,12 +48,7 @@ html,body{
     height: 100%;
 }
 
-#content{
-    height:80%;
-    /*background-color: blue;*/
-    position: relative;
-    z-index: 2;
-}
+
 #img_div{
     float:left;
     height:40px;
@@ -121,7 +116,13 @@ html,body{
     overflow:hidden;
     position:relative;
 
+
+    /*background-color: blue;*/
+
+    z-index: 2;
 }
+
+
 .content_height{
     height:80%;
 }
@@ -168,11 +169,11 @@ html,body{
     width:80%;
 
 }
-input[type=text]{
+input[type=email]{
     height: 30px;
     width:60%;
     border:0;
-    padding: 0;
+    padding-left: 10px;
     background:rgba(255,255,255, 0.7);
 }
 button {
@@ -183,6 +184,13 @@ button {
     height: 30px;
     font-family: PxGrotesk-Regular;
     font-size: 15px;
+}
+button:hover {
+    border:1px solid #999;
+    color:#000;
+    cursor: pointer;
+    cursor: hand;
+    box-shadow: 1px 1px 1px #888888;
 }
 
 .slider {
@@ -223,6 +231,7 @@ button {
     -ms-transform: translate(0, 93%);
     transform: translate(0, 93%);
 }
+
 .displaynone{
     display: none;
 }
@@ -232,6 +241,12 @@ button {
     /*background-color: red;*/
 
     z-index: 5;
+
+    -webkit-transition: background-color 1000ms linear 1s;
+    -moz-transition: background-color 1000ms linear 1s;
+    -o-transition: background-color 1000ms linear 1s;
+    -ms-transition: background-color 1000ms linear 1s;
+    transition: background-color 1000ms linear 1s;
 
 }
 #slider_button_button{
@@ -246,6 +261,8 @@ button {
     display: table;
     border-radius: 10px 10px 0 0;
     border: 1px solid white;
+
+
 }
 #slider_button_button_button{
     display: table-cell;
@@ -256,6 +273,28 @@ button {
     background-color: white;
 
 }
+.slider_height{
+    height:100%;
+}
+.slider_height2{
+    height:107%;
+}
 .black{
     background-color: black;
+}
+#slider_content_table{
+    display: table;
+    height: 100%;
+    width: 60%;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+#slider_content_video{
+    /*background-color: aqua;*/
+    display: table-cell;
+    vertical-align: middle;
+}
+#content_form1{
+    font-size: 40px;
+    font-family: PxGrotesk-Regular;
 }
