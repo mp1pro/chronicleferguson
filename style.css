@@ -298,3 +298,14 @@ button:hover {
     font-size: 40px;
     font-family: PxGrotesk-Regular;
 }
+/*transitioning the moment to movement*/
+#text{
+
+}
+.hide{
+    display:none;
+}
+.un_hide{
+    display: inline;
+}
+/*end transitioning the moment to movement*/

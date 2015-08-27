@@ -48,7 +48,7 @@
                     BE A PART OF
                 </div>
                 <div id="content_label_2">
-                    THE MO<span id="text"></span>MENT.
+                    THE MO<span id="text" class="hide">VE</span>M<span>E</span>NT.
                 </div>
             </div>
             <div id="content_p">
@@ -87,18 +87,29 @@
             testing testing
     </div>-->
 <script>
-
-    $(function(){
+    $(document).ready(function(){
+        letterTrans()
+    });
+    function letterTrans(){
+        setTimeout(function(){ trans()  }, 2000);
+    }
+    function trans() {
+        console.log('testing');
+        text.classList.remove('hide');
+        text.classList.add('un_hide');
+    }
 
     console.log('testing');
 
-        var showText = function (target, message, index, interval) {
+        /*var showText = function (target, message, index, interval) {
             if (index < message.length) {
                 $(target).append(message[index++]);
                 setTimeout(function () { showText(target, message, index, interval); }, interval);
             }
         }
-        showText("#text", "VE", 0, 1000);
+        showText("#text", "VE", 0, 1000);*/
+
+    var text = document.querySelector('.hide');
 
     var toggle = document.getElementById('slider_button_button');
     var slider = document.querySelector('.slider');
@@ -117,7 +128,7 @@
 
 
 
-    /*if (slider.classList.contains('closed')) {*/
+
 
 
     slider.classList.remove('closed');
@@ -134,12 +145,8 @@
     button_text.classList.add("upload");
     /*video_tag.document.createAttribute("autoplay")*/
         $(video_tag).prop('autoplay', true);
-    }/* else {
-    slider.classList.remove('opened');
-    slider.classList.add('closed');
-    }*/
-    /*}*/
-    });
+    }
+
 
 
     var formsign = document.querySelector('.form_sign');
@@ -166,6 +173,9 @@
 
         return false;
     }
+
+
+
 </script>
 
 </body>
