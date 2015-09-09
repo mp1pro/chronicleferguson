@@ -17,52 +17,36 @@ html,body{
     position:relative;
 }
 
-#top{
-
+.top{
     background-color: black;
     position: relative;
     z-index: 1;
-
-    transition: height 2s linear,transform 2s;
+    height: 20%;
 }
-.top_height{
-    height:13%;
 
-}
-.top_height1{
-    height:20%;
-
-}
-#top_menu{
+.top_menu{
     /*background-color: red;*/
-    height: 40px;
-    width:100%;
-    position:absolute;
-    top:10px;
-
-}
-#top_menu_middle{
-    width:90%;
-    margin: 0 auto;
-    /*background-color: aliceblue;*/
-    height: 100%;
+    margin-top: 20px;
 }
 
-
-#img_div{
-    float:left;
+.img_div{
     height:40px;
-    width:40px;
-    /*background-color: blue;*/
-    padding-right: 10px;
+    /*background-color: aqua;*/
 }
-#logo_label{
-    float:left;
+
+.brand_img{
     height:40px;
-    width:350px;
+    width: 40px;
+}
+
+.logo_label{
+
+    height:40px;
+
     /*background-color: green;*/
     display: table;
 }
+
 #logo_label_vertical{
     display: table-cell;
     vertical-align: middle;
@@ -70,242 +54,63 @@ html,body{
     color:white;
     font-family: PxGrotesk-Bold;
     /*background-color: red;*/
+    text-align: center;
 }
-#share{
-    float:right;
+.menu_text{
     height:40px;
-    width:120px;
-    /*background-color: aqua;*/
-    display:table;
-
+    display: table;
 }
-#connect{
-    float:right;
-    height:40px;
-    width:200px;
-    /*background-color: green;*/
-    display:table;
-}
-#fb{
+.menu_middle{
     display:table-cell;
     vertical-align: middle;
-    height:40px;
-    width:40px;
-
+    text-align: center;
+}
+ a.links{
+    font-family: PxGrotesk-Light;
+    font-size: 14px;
+    color:white;
+    padding-left: 25px;
 }
 .fa{
     padding-left: 8px;
     color: white;
 }
-#connect_middle{
-    display:table-cell;
-    vertical-align: middle;
-    font-size: 15px;
-    color:white;
+.light{
     font-family: PxGrotesk-Light;
 }
-#dots{
-    font-size:1em ;
+.bold{
+    font-family: PxGrotesk-Bold;
 }
-#content{
+.content{
     background-image: url("img/CF_Splash_Crop_1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-
     overflow:hidden;
-    position:relative;
-
-
-    /*background-color: blue;*/
-
-    z-index: 2;
-}
-
-
-.content_height{
     height:80%;
 }
-.content_height2{
-    height:87%;
+.content_box{
+    height:400px;
+    background-color: red;
+    margin-top: 50px;
 }
-#content_box{
-    /*background-color: red;*/
-    height:300px;
-    width:60%;
-    position: absolute;
-    top:10%;
-    left:10%;
-    z-index: 1;
-}
-#content_label{
+.content_label{
     /*background-color: aqua;*/
-    height:120px;
-    width:100%;
+    height:80px;
+    width:auto;
     font-family: PxGrotesk-Bold;
     font-size: 70px;
 }
-#content_label_1{
-    /*background-color: orange;*/
-    height:60px;
-    width:100%;
-
-}
-#content_label_2{
-    /*background-color: yellow;*/
-    height:60px;
-    width:100%;
-}
-#content_p{
-    /*background-color: green;*/
-    height:60px;
-    width:80%;
-    font-family: PxGrotesk-Bold;
-    padding-top: 10px;
-}
-#content_form{
-    /*background-color: blue;*/
-    height:30px;
-    width:80%;
-
-}
-input[type=email]{
-    height: 30px;
-    width:60%;
-    border:0;
-    padding-left: 10px;
-    background:rgba(255,255,255, 0.7);
-}
-button {
-    border: 1px;
-    /*background-color: white;*/
-    float: right;
-    width: 30%;
-    height: 30px;
-    font-family: PxGrotesk-Regular;
-    font-size: 15px;
-}
-button:hover {
-    border:1px solid #999;
-    color:#000;
-    cursor: pointer;
-    cursor: hand;
-    box-shadow: 1px 1px 1px #888888;
-}
-
-.slider {
-    overflow-y: hidden;
-    /* complete liquid height based on the parent's height!! */
-    height:100%;
-    /*background-color: aqua;*/
-
-    /* only transition on transform properties which are hardware accelerated = way better performances */
-    /*-webkit-transition:-webkit-transform .20000s ease;
-    -moz-transition:   -moz-transform .20000s ease;
-    -ms-transition:    -ms-transform .20000s ease;
-    transition:        transform .20000s ease;*/
-
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
-
+.container_text{
     position: relative;
-    z-index: 2;
+    display: inline-block;
 }
-.slider.opened {
-    /* visible */
-    -webkit-transform: translate(0, 0%);
-    -moz-transform: translate(0, 0%);
-    -ms-transform: translate(0, 0%);
-    transform: translate(0, 0%);
+.container_text1{
+    display: inline-block;
 }
-.slider.closed {
-    /* completely offscreen */
-    -webkit-transform: translate(0, 93%);
-    -moz-transform: translate(0, 93%);
-    -ms-transform: translate(0, 93%);
-    transform: translate(0, 93%);
+.container_text2{
+    display: inline-block;
 }
-
-.displaynone{
-    display: none;
+.blue{
+    background-color: beige;
 }
-#slider_button{
-    width:100%;
-    height: 7%;
-    /*background-color: red;*/
-
-    z-index: 5;
-
-    -webkit-transition: background-color 1000ms linear 1s;
-    -moz-transition: background-color 1000ms linear 1s;
-    -o-transition: background-color 1000ms linear 1s;
-    -ms-transition: background-color 1000ms linear 1s;
-    transition: background-color 1000ms linear 1s;
-
-}
-#slider_button_button{
-    margin: 0 auto;
-    width: 200px;
-    height: 100%;
-    font-family: PxGrotesk-Regular;
-    font-size: 15px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    display: table;
-    border-radius: 10px 10px 0 0;
-    border: 1px solid white;
-
-
-}
-#slider_button_button_button{
-    display: table-cell;
-    vertical-align: middle;
-}
-#slider_content{
-    height: 100%;
-    background-color: white;
-
-}
-.slider_height{
-    height:100%;
-}
-.slider_height2{
-    height:107%;
-}
-.black{
-    background-color: black;
-}
-#slider_content_table{
-    display: table;
-    height: 100%;
-    width: 60%;
-    /*background-color: red;*/
-    margin: 0 auto;
-}
-#slider_content_video{
-    /*background-color: aqua;*/
-    display: table-cell;
-    vertical-align: middle;
-}
-#content_form1{
-    font-size: 40px;
-    font-family: PxGrotesk-Regular;
-}
-/*transitioning the moment to movement*/
-#text{
-
-}
-.hide{
-    display:none;
-}
-.un_hide{
-    display: inline;
-}
-/*end transitioning the moment to movement*/

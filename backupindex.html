@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chronicle Ferguson</title>
+
+    <link rel="icon" href="CF_Favicon_V2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+
+    <link rel="shortcut icon" href="CF_Favicon_V2.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="top" class="top_height1">
+    <div id="top_menu">
+        <div id="top_menu_middle">
+            <div id="img_div" class="toggle" >
+                <img src="img/ChronicleFerguson_Viewfinder_white.png" height="40" width="40">
+            </div>
+            <div id="logo_label">
+                <div id="logo_label_vertical">
+                    CHRONICLE <span id="dots">::</span> FERGUSON
+                </div>
+            </div>
+            <div id="share">
+                <div id="fb">
+                    <a href="http://www.facebook.com/chronicleferguson"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="http://www.twitter.com/photosferguson"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="http://www.instagram.com/chronicleferguson"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="http://"><i class="fa fa-pinterest-p fa-lg"></i></a>
+
+                </div>
+            </div>
+            <div id="connect">
+                <div id="connect_middle">
+                    SHARE &amp; CONNECT
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="content" class="content_height">
+    <div id="content_box" class="">
+        <div id="content_label">
+            <div id="content_label_1">
+                BE A PART OF
+            </div>
+            <div id="content_label_2">
+                THE MO<span id="text" class="hide">VE</span>M<span>E</span>NT.
+            </div>
+        </div>
+        <div id="content_p">
+            SIGN UP FOR THE MAILING LIST TO RECEIVE UPDATES ON CHRONICLE FERGUSON.
+        </div>
+        <div id="content_form">
+            <span id="content_form1"></span>
+            <form role="form"  onsubmit="return signup(this)" class="form_sign">
+                <!--<input name="email" type="email"  placeholder="EMAIL" class="email" required> <a href="#"> <button type="submit" >SIGN UP</button></a>-->
+                <div class="form_width">
+                    <div class="left_form">
+                        <div class="select_form"></div>
+                        <div class="select_form"></div>
+                        <div class="select_form"></div>
+                        <div class="select_form"></div>
+                        <div class="select_form"></div>
+                    </div>
+
+                    <div class="middle_form">
+
+                    </div>
+
+                    <div class="right_form">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--<div class="slider closed ">
+        <div id="slider_button" class="white">
+            <a href="#">
+            <div id="slider_button_button">
+                <div id="slider_button_button_button">
+                    HOW IT WORKS
+                </div>
+            </div>
+            </a>
+        </div>
+        <div id="slider_content" class="slider_height">
+            <div id="slider_content_table">
+                <div id="slider_content_video">
+                    <video width="100%">
+                        <source src="video/CF_VID_V2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+<!--<div id="slider_button">
+        testing testing
+</div>-->
+<script>
+    $(document).ready(function(){
+        letterTrans()
+    });
+    function letterTrans(){
+        setTimeout(function(){ trans()  }, 2000);
+    }
+    function trans() {
+        console.log('testing');
+        text.classList.remove('hide');
+        text.classList.add('un_hide');
+    }
+
+    console.log('testing');
+
+    /*var showText = function (target, message, index, interval) {
+     if (index < message.length) {
+     $(target).append(message[index++]);
+     setTimeout(function () { showText(target, message, index, interval); }, interval);
+     }
+     }
+     showText("#text", "VE", 0, 1000);*/
+
+    var text = document.querySelector('.hide');
+
+    var toggle = document.getElementById('slider_button_button');
+    var slider = document.querySelector('.slider');
+    var content_box = document.getElementById('content_box');
+    var t = document.querySelector('.top_height1');
+    var sliderHeight = document.querySelector('.slider_height');
+    var contentHeight = document.querySelector('.content_height');
+    var button_div = document.querySelector('.white');
+    var button_text = document.getElementById('slider_button_button_button');
+    var video_tag = document.getElementsByTagName("video");
+
+
+    toggle.addEventListener('click', togg, false);
+
+    function togg(){
+
+
+
+
+
+
+        slider.classList.remove('closed');
+        slider.classList.add('open');
+        t.classList.remove('top_height1');
+        t.classList.add('top_height');
+        sliderHeight.classList.remove('slider_height');
+        sliderHeight.classList.add('slider_height2');
+        contentHeight.classList.remove("content_height");
+        contentHeight.classList.add("content_height2");
+        button_div.classList.add('black');
+        console.log(video_tag);
+        button_text.innerHTML = "UPLOAD PHOTO";
+        button_text.classList.add("upload");
+        /*video_tag.document.createAttribute("autoplay")*/
+        $(video_tag).prop('autoplay', true);
+    }
+
+
+
+    var formsign = document.querySelector('.form_sign');
+    var contentForm1 = document.getElementById('content_form1');
+    /*
+     var onSignupComplete = function(error) {
+     signupBtn.disabled = false;
+     if (error) {
+     signupError.innerHTML = 'Please use corre         ct email address  ';
+     } else {
+     signupSuccess.innerHTML = 'Thanks for signing up!';
+     // hide the form
+     formsign.style.display = 'none';
+     }
+     };*/
+    function signup(formObj){
+
+        var myFirebaseRef = new Firebase("https://chron.firebaseio.com/signups");
+        myFirebaseRef.push({
+            email: formObj.email.value
+        });
+        formsign.style.display = 'none';
+        contentForm1.innerHTML = 'Thanks for signing up!';
+
+        return false;
+    }
+
+
+
+</script>
+
+</body>
+</html>
