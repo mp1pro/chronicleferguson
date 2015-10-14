@@ -20,7 +20,7 @@
 <div class="container-fluid top">
     <div class="top_menu row">
         <div class="col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1 img_div col-xs-4">
-            <img src="img/ChronicleFerguson_Viewfinder_white.png" class="center-block brand_img" alt="Chronicle_Ferguson">
+            <img src="img/ChronicleFerguson_logo_1.png" class="center-block brand_img" alt="Chronicle_Ferguson">
         </div>
         <div class="logo_label col-md-6 col-sm-8 col-xs-20 ">
             <div id="logo_label_vertical">
@@ -29,9 +29,10 @@
         </div>
         <div class="menu_text col-md-offset-4 col-md-9 col-sm-8 col-sm-offset-2 hidden-xs">
             <div class="menu_middle">
-                <a class="links">BUY BOOK</a>
+                <a class="links yellow">BUY BOOK</a>
+                <a class="links">VIEW GALLERY</a>
                 <a class="links hidden-sm hidden-xs">UPLOAD PHOTO</a>
-                <a class="links">PHOTO GALLERY</a>
+                <a class="links">MISSION</a>
             </div>
         </div>
         <div class="menu_text col-md-2 hidden-xs">
@@ -39,6 +40,15 @@
                 <a href="http://www.facebook.com/chronicleferguson"><i class="fa fa-facebook fa-lg"></i></a>
                 <a href="http://www.twitter.com/photosferguson"><i class="fa fa-twitter fa-lg"></i></a>
                 <a href="http://www.instagram.com/chronicleferguson"><i class="fa fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_menu_row">
+        <div class="menu_text col-md-offset-14">
+            <div class="menu_middle hidden-sm hidden-xs ">
+                <a href="support.html" class="links2">COMMUNITY</a>
+                <a class="links2">MEDIA</a>
+                <a class="links2">CONTACT US</a>
             </div>
         </div>
     </div>
@@ -52,23 +62,163 @@
             <div class="content_label blue">
                 THE <span class="container_text">MO</span><span class="container_text1 ">VE</span><span class="container_text2">MENT</span>
             </div>
+            <div class="content_par">
+                JOIN THE PHOTO COMMUNITY. SHARE YOUR STORY
+            </div>
+            <div class="content_form col-md-24">
+
+
+                <div class="left_form col-md-6 form_height">
+                    <div class="col-md-24 form_button b1">
+                        <div class="button_middle">
+                            PHOTOGRAPHER
+                        </div>
+                    </div>
+                    <div class="col-md-24 form_button b2">
+                        <div class="button_middle">
+                            CONTRIBUTOR
+                        </div>
+                    </div>
+                    <div class="col-md-24 form_button b3">
+                        <div class="button_middle">
+                            BECOME A SPONSOR
+                        </div>
+                    </div>
+                    <div class="col-md-24 form_button b4">
+                        <div class="button_middle">
+                            EDUCATOR
+                        </div>
+                    </div>
+                    <div class="col-md-24 form_button b5">
+                        <div class="button_middle">
+                            MEDIA
+                        </div>
+                    </div>
+                </div>
+                <div class="mid_form col-md-4 form_height">
+                    <div class="inside inside_left col-md-8">
+                        <div class="left_dash">
+
+                        </div>
+                    </div>
+                    <div class="inside inside_mid col-md-8">
+                        <div class="mid_dash">
+                            <img src="img/ChronicleFerguson_logo_1.png" width="30" height="30" class="center-block">
+                        </div>
+                    </div>
+                    <div class="inside inside_right col-md-8">
+                        <div class="right_dash">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right_form col-md-14 form_height">
+                    <input type="text" name="NAME" placeholder="NAME" class="" required>
+                    <input type="email" name="EMAIL" placeholder="EMAIL" class="" required>
+                    <input type="text" name="ZIP" placeholder="ZIP" class="">
+                    <input type="text" name="COMMENT" placeholder="COMMENT" class="">
+                    <input type="text" name="COMMENT" placeholder="COMMENT" class="">
+                    <div class="signup left_button" >
+
+                    </div>
+                    <div class="signup right_button">
+                        <div class="right_button_middle">
+                            SIGNUP
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
+
     $(document).ready(function(){
         var con_text=$(".container_text1").width();
-
+        $(".expand").css("width", con_text);
         console.log(con_text);
 
-        $(".container_text1").width(0).css('opacity', '0');
+
         setTimeout(function(){
 
-            $(".container_text1").animate({ width: con_text },{ queue: false, duration: 1000 });
-            $(".container_text1").animate({ opacity: 1},{ queue: false, duration: 4000 });
         }, 2000);
 
+        width_Out();
+
+
+
     });
+    var width_Out=function widthOut(){
+        var textTrans = document.querySelector('.container_text1');
+
+        /*var expandWidth = document.querySelector('.expand');
+        var contractWidth = document.querySelector('.contract');*/
+
+        textTrans.classList.remove('contract');
+        textTrans.classList.add('expand');
+    }
+    /*hover finctions*/
+    var inputName = '<input type="text" name="NAME" placeholder="NAME" class="" required>';
+    var inputEmail = '<input type="email" name="EMAIL" placeholder="EMAIL" class="" required>';
+    var inputZip = '<input type="text" name="ZIP" placeholder="ZIP" class="">';
+    var inputComment = '<input type="text" name="COMMENT" placeholder="COMMENT" class="">';
+    var inputPhone = '<input type="tel" name="PHONE" placeholder="PHONE" class="">';
+    var inputInstitute = '<input type="text" name="INSTITUTE" placeholder="INSTITUTE" class="" required>';
+    var inputOrg = '<input type="text" name="ORG" placeholder="ORG" class="" required>';
+    var leftButton = '<div class="signup left_button" ></div>';
+    var rightButton = '<div class="signup right_button"><div class="right_button_middle">SIGNUP</div></div>';
+
+    $('.b1').hover(
+            function(){
+                $(".left_dash").animate({top: '15px'},"fast");
+                $(".mid_dash").animate({top: '0px'},"fast");
+                $(".right_dash").animate({height: '0px'},"fast");
+                $(".right_form").html(inputName + inputEmail + inputZip + inputComment + rightButton);
+                $(".b1").css({"background-color":"white","color":"black"});
+                $(".b2,.b3,.b4,.b5").css({"background-color":"black","color":"white"});
+            }
+    );
+    $('.b2').hover(
+            function(){
+                $(".left_dash").animate({top: '50px'},"fast");
+                $(".mid_dash").animate({top: '35px'},"fast");
+                $(".right_dash").animate({height: '35px'},"fast");
+                $(".right_form").html(inputName + inputEmail + inputZip + inputComment + rightButton);
+                $(".b2").css({"background-color":"white","color":"black"});
+                $(".b1,.b3,.b4,.b5").css({"background-color":"black","color":"white"});
+            }
+    );
+    $('.b3').hover(
+            function(){
+                $(".left_dash").animate({top: '85px'},"fast");
+                $(".mid_dash").animate({top: '70px'},"fast");
+                $(".right_dash").animate({height: '70px'},"fast");
+                $(".right_form").html(inputName + inputEmail + inputPhone + inputZip + inputComment + rightButton);
+                $(".b3").css({"background-color":"white","color":"black"});
+                $(".b1,.b2,.b4,.b5").css({"background-color":"black","color":"white"});
+            }
+    );
+    $('.b4').hover(
+            function(){
+                $(".left_dash").animate({top: '120px'},"fast");
+                $(".mid_dash").animate({top: '105px'},"fast");
+                $(".right_dash").animate({height: '105px'},"fast");
+                $(".right_form").html(inputInstitute + inputEmail + inputPhone + inputZip + inputComment + rightButton);
+                $(".b4").css({"background-color":"white","color":"black"});
+                $(".b1,.b3,.b2,.b5").css({"background-color":"black","color":"white"});
+            }
+    );
+    $('.b5').hover(
+            function(){
+                $(".left_dash").animate({top: '155px'},"fast");
+                $(".mid_dash").animate({top: '140px'},"fast");
+                $(".right_dash").animate({height: '140px'},"fast");
+                $(".right_form").html(inputOrg + inputEmail + inputPhone + inputZip + inputComment + rightButton);
+                $(".b5").css({"background-color":"white","color":"black"});
+                $(".b1,.b3,.b4,.b2").css({"background-color":"black","color":"white"});
+            }
+    );
+
 </script>
 </body>
 </html>
