@@ -31,7 +31,7 @@
             <div class="menu_middle">
                 <a class="links yellow">BUY BOOK</a>
                 <a class="links">VIEW GALLERY</a>
-                <a class="links hidden-sm hidden-xs">UPLOAD PHOTO</a>
+                <a href="http://fergusonbeauty.com/upload.html" class="links hidden-sm hidden-xs">UPLOAD PHOTO</a>
                 <a class="links">MISSION</a>
             </div>
         </div>
@@ -112,20 +112,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="right_form col-md-14 form_height">
-                    <input type="text" name="NAME" placeholder="NAME" class="" required>
-                    <input type="email" name="EMAIL" placeholder="EMAIL" class="" required>
-                    <input type="text" name="ZIP" placeholder="ZIP" class="">
-                    <input type="text" name="COMMENT" placeholder="COMMENT" class="">
-                    <input type="text" name="COMMENT" placeholder="COMMENT" class="">
-                    <div class="signup left_button" >
+                <div class="right_form col-md-14 form">
+                    <input type="text" name="NAME" placeholder="NAME" class="col-md-24 padding" required>
+                    <input type="email" name="EMAIL" placeholder="EMAIL" class="col-md-24 padding" required>
+                    <input type="text" name="ZIP" placeholder="ZIP" class="col-md-24 padding">
+                    <input type="text" name="COMMENT" placeholder="COMMENT" class="col-md-24 padding">
+                    <button type="submit" class="col-md-12 col-md-offset-12 button_signup">SIGNUP</button>
 
-                    </div>
-                    <div class="signup right_button">
+                    <!--<div class="signup left_button" >
+
+                    </div>-->
+                    <!--<div class="signup right_button">
                         <div class="right_button_middle">
                             SIGNUP
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -175,6 +176,7 @@
                 $(".right_dash").animate({height: '0px'},"fast");
                 $(".right_form").html(inputName + inputEmail + inputZip + inputComment + rightButton);
                 $(".b1").css({"background-color":"white","color":"black"});
+                $(".mid_form").animate({height: '135px'},"fast");
                 $(".b2,.b3,.b4,.b5").css({"background-color":"black","color":"white"});
             }
     );
@@ -185,6 +187,7 @@
                 $(".right_dash").animate({height: '35px'},"fast");
                 $(".right_form").html(inputName + inputEmail + inputZip + inputComment + rightButton);
                 $(".b2").css({"background-color":"white","color":"black"});
+                $(".mid_form").animate({height: '135px'},"fast");
                 $(".b1,.b3,.b4,.b5").css({"background-color":"black","color":"white"});
             }
     );
@@ -195,6 +198,7 @@
                 $(".right_dash").animate({height: '70px'},"fast");
                 $(".right_form").html(inputName + inputEmail + inputPhone + inputZip + inputComment + rightButton);
                 $(".b3").css({"background-color":"white","color":"black"});
+                $(".mid_form").animate({height: '170px'},"fast");
                 $(".b1,.b2,.b4,.b5").css({"background-color":"black","color":"white"});
             }
     );
@@ -205,6 +209,7 @@
                 $(".right_dash").animate({height: '105px'},"fast");
                 $(".right_form").html(inputInstitute + inputEmail + inputPhone + inputZip + inputComment + rightButton);
                 $(".b4").css({"background-color":"white","color":"black"});
+                $(".mid_form").animate({height: '170px'},"fast");
                 $(".b1,.b3,.b2,.b5").css({"background-color":"black","color":"white"});
             }
     );
@@ -215,10 +220,11 @@
                 $(".right_dash").animate({height: '140px'},"fast");
                 $(".right_form").html(inputOrg + inputEmail + inputPhone + inputZip + inputComment + rightButton);
                 $(".b5").css({"background-color":"white","color":"black"});
+                $(".mid_form").animate({height: '170px'},"fast");
                 $(".b1,.b3,.b4,.b2").css({"background-color":"black","color":"white"});
             }
     );
-
+    /*end of hover finctions*/
 </script>
 </body>
 </html>

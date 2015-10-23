@@ -1,16 +1,108 @@
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chronicle Ferguson</title>
+
+    <link rel="icon" href="CF_Favicon_V2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+
+    <link rel="shortcut icon" href="CF_Favicon_V2.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<form action="upload.php" method="POST" enctype="multipart/form-data">
+
+<div class="container-fluid top">
+    <div class="top_menu row">
+        <div class="col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1 img_div col-xs-4">
+            <img src="img/ChronicleFerguson_logo_1.png" class="center-block brand_img" alt="Chronicle_Ferguson">
+        </div>
+        <div class="logo_label col-md-6 col-sm-8 col-xs-20 ">
+            <div id="logo_label_vertical">
+                CHRONICLE <span id="dots">::</span> FERGUSON
+            </div>
+        </div>
+        <div class="menu_text col-md-offset-4 col-md-9 col-sm-8 col-sm-offset-2 hidden-xs">
+            <div class="menu_middle">
+                <a class="links yellow">BUY BOOK</a>
+                <a class="links">VIEW GALLERY</a>
+                <a class="links hidden-sm hidden-xs">UPLOAD PHOTO</a>
+                <a class="links">MISSION</a>
+            </div>
+        </div>
+        <div class="menu_text col-md-2 hidden-xs">
+            <div class="menu_middle">
+                <a href="http://www.facebook.com/chronicleferguson"><i class="fa fa-facebook fa-lg"></i></a>
+                <a href="http://www.twitter.com/photosferguson"><i class="fa fa-twitter fa-lg"></i></a>
+                <a href="http://www.instagram.com/chronicleferguson"><i class="fa fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_menu_row">
+        <div class="menu_text col-md-offset-14">
+            <div class="menu_middle hidden-sm hidden-xs ">
+                <a href="support.html" class="links2">COMMUNITY</a>
+                <a class="links2">MEDIA</a>
+                <a class="links2">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid content_upload">
+    <div class="top_upload col-md-24 margin-bottom">
+        <div class="left_upload col-md-11 col-md-offset-1">
+            <div class="left_upload_middle">
+                UPLOAD PHOTOS
+            </div>
+        </div>
+        <div class="right_upload col-md-12">
+            <div class="right_upload_middle">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10 col-md-offset-1 left_upload_para margin-bottom">
+        WE ARE LOOKING FOR PHOTOS THAT TELL YOUR STORY, WHATEVER THAT LOOKS LIKE. WHETHER IT IS ARTISTIC OR INFORMATIVE, REALISTIC OR ABSTRACT, HOPEFUL OR STARK. WE WANT TO TELL THE FERGUSON STORY FROM A PERSPECTIVE THAT HASN'T BEEN SEEN BEFORE – YOURS
+        </br></br>
+        SUBMITTING YOUR PHOTOS TO CHRONICLE: FERGUSON AUTHORIZES US TO DISPLAY THEM ON OUR WEBSITE AND USE THEM IN OUR PROMOTIONAL MATERIAL, BUT DOES NOT GIVE US THE RIGHT TO SELL YOUR WORK. IF YOUR PHOTO IS CHOSEN FOR POSSIBLE INCLUSION IN THE BOOK OR THE ART GALLERY SHOWING, WE'LL GET IN TOUCH TO DISCUSS THAT WITH YOU.
+        </br></br>
+        PLEASE USE THE FORM BELOW TO SUBMIT YOUR PHOTO. WE PREFER SIZES AROUND 1MB, BUT CAN ANYTHING UP TO 10MB.
+    </div>
+    <div class="col-md-8 col-md-offset-3 right_upload_form">
+        <input type="text" name="NAME" placeholder="NAME" class="col-md-24 padding" required>
+        <input type="email" name="EMAIL" placeholder="EMAIL" class="col-md-24 padding" required>
+        <input type="file" name="files[]" class="col-md-14 padding"/>
+        <div></div>
+        <input type="text" name="LOCATION" placeholder="LOCATION" class="col-md-14 padding" multiple/>
+        <input type="date" name="DATE" placeholder="DATE" class="col-md-9 col-md-offset-1 padding">
+        <input type="text" name="COMMENT" placeholder="COMMENT" class="col-md-24 padding" multiple/>
+        <!--<input type="submit" value="Upload" name="log"/>-->
+        <button type="submit" class="col-md-9 col-md-offset-15 button_signup" value="Upload">UPLOAD</button>
+    </div>
+</div>
+<div class="container-fluid upload_bottom">
+    <div class="col-md-8 bottom_line"></div>
+    <div class="col-md-8 bottom_link">VIEW GALLERY</div>
+    <div class="col-md-8 bottom_line"></div>
+    <div class="col-md-8 bottom_line"></div>
+    <div class="col-md-8 bottom_link2">TO FIND OUT MORE INFORMATION SIGN UP FOR UPDATES FROM CHRONICLE:FERGUSON.</div>
+    <div class="col-md-8 bottom_line"></div>
+</div>
+
+<!--<form action="upload.php" method="POST" enctype="multipart/form-data">
     <p><input type="file" name="files[]"/></p>
     <p><input type="text" name="nm" placeholder="location" multiple/></p>
     <p><input type="date" name="date"></p>
     <p><input type="submit" value="Upload" name="log"/></p>
-</form>
+</form>-->
 
 </body>
 </html>

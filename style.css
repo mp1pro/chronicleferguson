@@ -161,9 +161,13 @@ a.links2{
 }
 .right_form{
     /*background-color: blue;*/
+    padding-left: 1%;
 }
 .form_height{
-    height:170px;
+    height:135px;
+}
+.form_height_right{
+    height:135px;
 }
 .form_button{
     background-color: black;
@@ -184,7 +188,6 @@ a.links2{
 
 }*/
 .button_middle{
-
     text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -192,11 +195,18 @@ a.links2{
 input{
     margin-bottom: 5px;
     height: 30px;
-    width:99%;
+    /*width:99%;*/
     border:0;
-    padding-left: 5%;
-    margin-left: 1%;
+    /*padding-left: 5%;*/
+    /*margin-left: 1%;*/
     background:rgba(255,255,255, 0.7);
+}
+.padding{
+    padding-left: 5%;
+}
+.button_signup{
+    height: 30px;
+    border: 0px;
 }
 .left_button{
     margin-left: 1%;
@@ -436,3 +446,130 @@ input{
     margin-top:-20px;
 }
 /*end support styles*/
+
+/*start upload styles*/
+.content_upload{
+    background-image: url("img/025_SNB3549.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    /*overflow:hidden;*/
+    height:auto;
+    background-position:100% 50% ;
+}
+.top_upload{
+    height: 100px;
+}
+.left_upload{
+    height: 100px;
+    display: table;
+}
+.left_upload_middle{
+   vertical-align: middle;
+    display: table-cell;
+    font-family: PxGrotesk-Bold;
+    font-size: 70px;
+    color: #ffffff;
+}
+.right_upload{
+    height: 100px;
+
+    position: relative;
+}
+.right_upload_middle{
+    height:50px;
+    position: absolute;
+    top: 45px;
+    border-top: 3px solid #ffffff;
+    width: 100%;
+}
+.left_upload_para{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: PxGrotesk-Regular;
+}
+.right_upload_form{
+    height:auto;
+}
+.upload_bottom{
+    background-color: #000000;
+    height: auto;
+}
+.bottom_link{
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+    font-family: PxGrotesk-Regular;
+    background-color: #000000;
+}
+.bottom_link2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-family: PxGrotesk-Regular;
+    background-color: #000000;
+}
+.bottom_line{
+    border-bottom: solid 1px #ffffff;
+    height: 60px;
+    background-color: #000000;
+}
+.right_upload_form>input {
+    margin-bottom: 15px;
+    background:rgba(255,255,255, 0.9);
+}
+.left_gallery_middle{
+    vertical-align: middle;
+    display: table-cell;
+    font-family: PxGrotesk-Bold;
+    font-size: 70px;
+    color: #000000;
+}
+/*end gallery styles*/
+.content_gallery{
+    /*background-image: url("img/025_SNB3549.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    position: relative;
+    /*overflow:hidden;*/
+    height:auto;
+    /*background-position:100% 50% ;*/
+}
+/*end gallery styles*/
+.first_row{
+    height: 150px;
+    /*background-color: red;*/
+}
+.img_gal{
+    height: 150px;
+    width: 18%;
+    margin-right: 2%;
+    /*background-color: #000000;*/
+    float: left;
+    border: 1px solid #000000;
+}
+.img_gal2{
+
+}
+.second_row{
+    height: 30px;
+    /*background-color: #000000;*/
+}
+.line_upload{
+    height: 30px;
+
+    position: relative;
+}
+.line_upload_middle{
+    height:30px;
+    position: absolute;
+    top: 15px;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+    /*background-color: red;*/
+}
+.img_logo{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
