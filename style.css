@@ -18,20 +18,16 @@ html,body{
 }
 
 #top{
-
     background-color: black;
     position: relative;
     z-index: 1;
-
     transition: height 2s linear,transform 2s;
 }
 .top_height{
     height:13%;
-
 }
 .top_height1{
     height:20%;
-
 }
 #top_menu{
     /*background-color: red;*/
@@ -39,7 +35,6 @@ html,body{
     width:100%;
     position:absolute;
     top:10px;
-
 }
 #top_menu_middle{
     width:90%;
@@ -47,8 +42,6 @@ html,body{
     /*background-color: aliceblue;*/
     height: 100%;
 }
-
-
 #img_div{
     float:left;
     height:40px;
@@ -91,7 +84,6 @@ html,body{
     vertical-align: middle;
     height:40px;
     width:40px;
-
 }
 .fa{
     padding-left: 8px;
