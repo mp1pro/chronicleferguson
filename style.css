@@ -16,7 +16,6 @@ html,body{
     margin: 0px;
     position:relative;
 }
-
 #top{
     background-color: black;
     position: relative;
@@ -113,8 +112,6 @@ html,body{
 
     z-index: 2;
 }
-
-
 .content_height{
     height:80%;
 }
@@ -184,7 +181,6 @@ button:hover {
     cursor: hand;
     box-shadow: 1px 1px 1px #888888;
 }
-
 .slider {
     overflow-y: hidden;
     /* complete liquid height based on the parent's height!! */
@@ -223,7 +219,6 @@ button:hover {
     -ms-transform: translate(0, 93%);
     transform: translate(0, 93%);
 }
-
 .displaynone{
     display: none;
 }
@@ -239,7 +234,6 @@ button:hover {
     -o-transition: background-color 1000ms linear 1s;
     -ms-transition: background-color 1000ms linear 1s;
     transition: background-color 1000ms linear 1s;
-
 }
 #slider_button_button{
     margin: 0 auto;
