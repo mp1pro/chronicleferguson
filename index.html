@@ -58,31 +58,7 @@
                 </form>
             </div>
         </div>
-        <!--<div class="slider closed ">
-            <div id="slider_button" class="white">
-                <a href="#">
-                <div id="slider_button_button">
-                    <div id="slider_button_button_button">
-                        HOW IT WORKS
-                    </div>
-                </div>
-                </a>
-            </div>
-            <div id="slider_content" class="slider_height">
-                <div id="slider_content_table">
-                    <div id="slider_content_video">
-                        <video width="100%">
-                            <source src="video/CF_VID_V2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-    </div>
-    <!--<div id="slider_button">
-            testing testing
-    </div>-->
+        
 <script>
     $(document).ready(function(){
         letterTrans()
@@ -97,14 +73,6 @@
     }
 
     console.log('testing');
-
-        /*var showText = function (target, message, index, interval) {
-            if (index < message.length) {
-                $(target).append(message[index++]);
-                setTimeout(function () { showText(target, message, index, interval); }, interval);
-            }
-        }
-        showText("#text", "VE", 0, 1000);*/
 
     var text = document.querySelector('.hide');
     var toggle = document.getElementById('slider_button_button');
@@ -137,17 +105,7 @@
     }
     var formsign = document.querySelector('.form_sign');
     var contentForm1 = document.getElementById('content_form1');
-    /*
-    var onSignupComplete = function(error) {
-        signupBtn.disabled = false;
-        if (error) {
-            signupError.innerHTML = 'Please use corre         ct email address  ';
-        } else {
-            signupSuccess.innerHTML = 'Thanks for signing up!';
-            // hide the form
-            formsign.style.display = 'none';
-        }
-    };*/
+
     function signup(formObj){
         var myFirebaseRef = new Firebase("https://chron.firebaseio.com/signups");
         myFirebaseRef.push({
